@@ -1,0 +1,8 @@
+%h2 我的信息
+%p=@client.to_yaml
+
+%h2 友邻的广播们
+%ul
+  - @statuses.each do |status|
+    %li=status.to_yaml
+
